@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Ryan Styles</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hero">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <!-- <li><a href="#">Projects</a></li> -->
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="contact-content">
+      <div class="contact-header">
+        <h1>Get In Touch</h1>
+        <p>Have a project in mind or just want to say hello? I'd love to hear from you!</p>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <h3>Other Ways to Reach Me</h3>
+        <div class="contact-links">
+          <a href="mailto:ryan.c.styles@gmail.com" class="contact-link">
+            <span>📧</span>
+            ryan.c.styles@gmail.com
+          </a>
+          <a href="www.linkedin.com/in/ryan-styles-07345b176" class="contact-link">
+            <span>💼</span>
+            LinkedIn
+          </a>
+          <a href="https://github.com/Rstyles" class="contact-link">
+            <span>🐙</span>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
