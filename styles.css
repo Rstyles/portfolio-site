@@ -3,13 +3,31 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  height: 100%;
-  color: #2e2e2e;
+  min-height: 100%;
+  colo/* Contact Page Styles */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    max-height: 60vh;
+    overflow-y: auto;
 }
 
 .hero {
   background: url("./assets/background-image.png") no-repeat center center/cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,8 +87,9 @@ html {
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    min-width: 40%;
-    min-height: 40%;
+    max-width: 600px;
+    width: 90%;
+    max-height: 60vh;
 }
 
 .content h1 {
@@ -116,9 +135,9 @@ html {
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
+    max-width: 600px;
     width: 90%;
-    max-height: 80vh;
+    max-height: 60vh;
     overflow-y: auto;
 }
 
@@ -205,38 +224,39 @@ html {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1.2rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    max-width: 500px;
+    max-width: 600px;
     width: 90%;
-    max-height: 85vh;
+    max-height: 60vh;
+    overflow-y: auto;
 }
 
 .contact-header {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .contact-header h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 600;
-    margin: 0 0 0.75rem 0;
+    margin: 0 0 0.5rem 0;
     color: #2e2e2e;
 }
 
 .contact-header p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #5a5a5a;
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.3;
 }
 
 .contact-form {
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .form-group {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
     text-align: left;
 }
 
@@ -251,11 +271,11 @@ html {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.75rem;
+    padding: 0.6rem;
     border: 1px solid rgba(156, 123, 196, 0.3);
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
+    font-size: 0.95rem;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(5px);
     transition: all 0.3s ease;
@@ -272,18 +292,18 @@ html {
 
 .form-group textarea {
     resize: vertical;
-    min-height: 60px;
+    min-height: 50px;
 }
 
 .submit-btn {
     width: 100%;
-    padding: 0.75rem 1.5rem;
+    padding: 0.6rem 1.2rem;
     background-color: #9c7bc4;
     color: white;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -308,32 +328,33 @@ html {
 }
 
 .contact-info h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     color: #2e2e2e;
 }
 
 .contact-links {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.5rem;
     align-items: center;
 }
 
 .contact-link {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
     background: rgba(156, 123, 196, 0.1);
     border: 1px solid rgba(156, 123, 196, 0.2);
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     text-decoration: none;
     color: #2e2e2e;
     font-weight: 500;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
-    min-width: 200px;
+    min-width: 180px;
     justify-content: center;
 }
 
@@ -368,12 +389,33 @@ html {
     border: 1px solid rgba(245, 101, 101, 0.3);
 }
 
+/* Footer Styles */
+.footer {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer p {
+    margin: 0;
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
 /* Responsive adjustments for about page */
 @media (max-width: 768px) {
-    .about-content {
+    .about-content, .contact-content, .content {
         padding: 1.5rem;
         width: 95%;
-        max-height: 85vh;
+        max-height: 70vh;
+        max-width: 90%;
     }
     
     .profile-image {
@@ -381,7 +423,7 @@ html {
         height: 120px;
     }
     
-    .about-content h1 {
+    .about-content h1, .contact-header h1, .content h1 {
         font-size: 2rem;
     }
     
@@ -390,12 +432,20 @@ html {
     }
 }
 
+/* Large desktop adjustments for 1080p+ */
+@media (min-width: 1920px) {
+    .about-content, .contact-content, .content {
+        max-width: 700px;
+        max-height: 55vh;
+    }
+}
+
 /* Responsive adjustments for contact page */
 @media (max-width: 768px) {
     .contact-content {
         padding: 1.5rem;
         width: 95%;
-        max-height: 90vh;
+        max-height: 75vh;
     }
     
     .contact-header h1 {
@@ -414,4 +464,36 @@ html {
         min-width: auto;
         width: 100%;
     }
+}
+
+/* Custom Scrollbar Styles */
+/* For Webkit browsers (Chrome, Safari, Edge) */
+.about-content::-webkit-scrollbar,
+.contact-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.about-content::-webkit-scrollbar-track,
+.contact-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.about-content::-webkit-scrollbar-thumb,
+.contact-content::-webkit-scrollbar-thumb {
+    background: rgba(156, 123, 196, 0.4);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.about-content::-webkit-scrollbar-thumb:hover,
+.contact-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(156, 123, 196, 0.6);
+}
+
+/* For Firefox */
+.about-content,
+.contact-content {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(156, 123, 196, 0.4) rgba(255, 255, 255, 0.1);
 }
